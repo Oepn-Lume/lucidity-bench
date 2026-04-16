@@ -6,13 +6,24 @@ Lucidity-Bench is a benchmark and publishing framework for a blunt question: whe
 
 Most evals reward completion, verbosity, or broad capability. Lucidity-Bench measures whether a system notices it is cornered, changes reasoning level, and exits the dead path before the invoice turns obscene.
 
+## Start Here
+
+- Read the benchmark method: [`docs/methodology.md`](docs/methodology.md)
+- Open the first public case: [`examples/stall-of-the-day/founding-cases/permission-wall.md`](examples/stall-of-the-day/founding-cases/permission-wall.md)
+- Learn the submission path: [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- Skim the FAQ: [`docs/faq.md`](docs/faq.md)
+- Read the architectural argument: [`docs/whitepaper-index.md`](docs/whitepaper-index.md)
+
 ## Status
 
 - `README-first`: the benchmark contract is being written in public before the full runner lands.
 - `Metrics draft`: [`docs/metrics.md`](docs/metrics.md) defines LEI, DEE, wake-up rate, and waste ratio.
 - `Task taxonomy draft`: [`docs/tasks.md`](docs/tasks.md) maps the failure families we want to provoke.
+- `Method page live`: [`docs/methodology.md`](docs/methodology.md) now explains how tasks, traces, scores, and case cards fit together.
+- `First case live`: [`examples/stall-of-the-day/founding-cases/permission-wall.md`](examples/stall-of-the-day/founding-cases/permission-wall.md) is the first formal public case page.
+- `Contribution path live`: [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`docs/case-submission-template.md`](docs/case-submission-template.md) define how outside cases enter the repository.
 - `Visualizer planned`: [`visualizer/README.md`](visualizer/README.md) defines the first trace-to-picture contract.
-- `Case publishing planned`: [`examples/stall-of-the-day/README.md`](examples/stall-of-the-day/README.md) defines the public case card template.
+- `Case index live`: [`examples/stall-of-the-day/README.md`](examples/stall-of-the-day/README.md) now routes readers into public case cards and submission guidance.
 
 ## Stall of the Day
 
@@ -136,12 +147,27 @@ Trajectory: ./.lucidity/runs/latest/trace.txt
 
 If the future tool cannot explain itself this plainly, the tool is not finished.
 
+## MVP Pages
+
+- [`docs/methodology.md`](docs/methodology.md): the outward-facing explanation of what Lucidity-Bench measures and how a run becomes a case.
+- [`examples/stall-of-the-day/founding-cases/permission-wall.md`](examples/stall-of-the-day/founding-cases/permission-wall.md): the first formal `Stall of the Day` case page.
+- [`CONTRIBUTING.md`](CONTRIBUTING.md): repository-level contribution guide for docs, cases, and benchmark changes.
+- [`docs/case-submission-template.md`](docs/case-submission-template.md): copy-paste template for case submission.
+- [`docs/faq.md`](docs/faq.md): quick explanation page for LEI, DEE, DEOA, and scope questions.
+
 ## What This Repository Contains
 
+- [`CONTRIBUTING.md`](CONTRIBUTING.md): the repository entry point for contributors.
+- [`docs/methodology.md`](docs/methodology.md): the method overview for tasks, traces, scores, and case cards.
 - [`docs/metrics.md`](docs/metrics.md): formal metric definitions and score semantics.
 - [`docs/tasks.md`](docs/tasks.md): benchmark task families engineered to trigger looping, hallucinated fixes, and permission walls.
+- [`docs/scoring-policy.md`](docs/scoring-policy.md): what is computed, proxied, or judged in public scores.
+- [`docs/trace-schema.md`](docs/trace-schema.md): the minimal run/event contract for traces and the future visualizer.
+- [`docs/case-card-spec.md`](docs/case-card-spec.md): the structure that public case pages follow.
+- [`docs/faq.md`](docs/faq.md): the quick explanation page for new readers.
+- [`docs/whitepaper-index.md`](docs/whitepaper-index.md): the guided entry point into the longer argument.
 - [`whitepaper.md`](whitepaper.md): the architectural argument behind DEOA and ACC-style conflict monitoring.
-- [`examples/stall-of-the-day/`](examples/stall-of-the-day/): templates and sample writeups for public benchmark cases.
+- [`examples/stall-of-the-day/`](examples/stall-of-the-day/): public case index and founding cases.
 - [`visualizer/`](visualizer/): trajectory visualization contract for loop clusters and pivot turns.
 - [`benchmarks/`](benchmarks/): task-pack layout that the future runner will execute.
 
