@@ -10,6 +10,8 @@ Most evals reward completion, verbosity, or broad capability. Lucidity-Bench mea
 
 - Read the benchmark method: [`docs/methodology.md`](docs/methodology.md)
 - Open the first public case: [`examples/stall-of-the-day/founding-cases/permission-wall.md`](examples/stall-of-the-day/founding-cases/permission-wall.md)
+- Browse the founding cases: [`examples/stall-of-the-day/README.md`](examples/stall-of-the-day/README.md)
+- Open the first task pack: [`benchmarks/permission-wall/README.md`](benchmarks/permission-wall/README.md)
 - Learn the submission path: [`CONTRIBUTING.md`](CONTRIBUTING.md)
 - Skim the FAQ: [`docs/faq.md`](docs/faq.md)
 - Read the architectural argument: [`docs/whitepaper-index.md`](docs/whitepaper-index.md)
@@ -21,7 +23,9 @@ Most evals reward completion, verbosity, or broad capability. Lucidity-Bench mea
 - `Task taxonomy draft`: [`docs/tasks.md`](docs/tasks.md) maps the failure families we want to provoke.
 - `Method page live`: [`docs/methodology.md`](docs/methodology.md) now explains how tasks, traces, scores, and case cards fit together.
 - `First case live`: [`examples/stall-of-the-day/founding-cases/permission-wall.md`](examples/stall-of-the-day/founding-cases/permission-wall.md) is the first formal public case page.
+- `Founding cases expanded`: hallucinated API looping and state drift now have formal case pages in [`examples/stall-of-the-day/founding-cases/`](examples/stall-of-the-day/founding-cases/).
 - `Contribution path live`: [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`docs/case-submission-template.md`](docs/case-submission-template.md) define how outside cases enter the repository.
+- `First task pack live`: [`benchmarks/permission-wall/README.md`](benchmarks/permission-wall/README.md) defines the first minimal benchmark pack.
 - `Visualizer planned`: [`visualizer/README.md`](visualizer/README.md) defines the first trace-to-picture contract.
 - `Case index live`: [`examples/stall-of-the-day/README.md`](examples/stall-of-the-day/README.md) now routes readers into public case cards and submission guidance.
 
@@ -150,7 +154,10 @@ If the future tool cannot explain itself this plainly, the tool is not finished.
 ## MVP Pages
 
 - [`docs/methodology.md`](docs/methodology.md): the outward-facing explanation of what Lucidity-Bench measures and how a run becomes a case.
-- [`examples/stall-of-the-day/founding-cases/permission-wall.md`](examples/stall-of-the-day/founding-cases/permission-wall.md): the first formal `Stall of the Day` case page.
+- [`examples/stall-of-the-day/founding-cases/permission-wall.md`](examples/stall-of-the-day/founding-cases/permission-wall.md): the permission-wall founding case.
+- [`examples/stall-of-the-day/founding-cases/hallucinated-api-loop.md`](examples/stall-of-the-day/founding-cases/hallucinated-api-loop.md): the hallucinated API founding case.
+- [`examples/stall-of-the-day/founding-cases/state-drift.md`](examples/stall-of-the-day/founding-cases/state-drift.md): the state-drift founding case.
+- [`benchmarks/permission-wall/README.md`](benchmarks/permission-wall/README.md): the first minimal task pack.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): repository-level contribution guide for docs, cases, and benchmark changes.
 - [`docs/case-submission-template.md`](docs/case-submission-template.md): copy-paste template for case submission.
 - [`docs/faq.md`](docs/faq.md): quick explanation page for LEI, DEE, DEOA, and scope questions.
@@ -169,7 +176,7 @@ If the future tool cannot explain itself this plainly, the tool is not finished.
 - [`whitepaper.md`](whitepaper.md): the architectural argument behind DEOA and ACC-style conflict monitoring.
 - [`examples/stall-of-the-day/`](examples/stall-of-the-day/): public case index and founding cases.
 - [`visualizer/`](visualizer/): trajectory visualization contract for loop clusters and pivot turns.
-- [`benchmarks/`](benchmarks/): task-pack layout that the future runner will execute.
+- [`benchmarks/`](benchmarks/): task-pack index plus the first minimal `permission-wall` pack.
 
 ## Why This Exists
 

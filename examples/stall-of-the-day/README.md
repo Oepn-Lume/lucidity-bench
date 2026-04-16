@@ -20,6 +20,8 @@ The structure for those pages is defined in [`../../docs/case-card-spec.md`](../
 ## Founding Cases
 
 - [`Permission Wall That Should Have Triggered Escalation`](founding-cases/permission-wall.md)
+- [`Hallucinated API Loop That Burned the Budget Before the Pivot`](founding-cases/hallucinated-api-loop.md)
+- [`State Drift That Reintroduced an Already-Fixed Constraint`](founding-cases/state-drift.md)
 
 ## Submit a Case
 

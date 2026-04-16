@@ -1,6 +1,10 @@
 # Benchmark Suite
 
-This directory will hold the benchmark task packs used by Lucidity-Bench.
+This directory holds the benchmark task packs used by Lucidity-Bench.
+
+## Available Task Packs
+
+- [`permission-wall/`](permission-wall/): the first minimal task pack, focused on hard environment boundaries and delayed escalation.
 
 Planned layout:
 
