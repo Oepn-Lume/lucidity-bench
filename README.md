@@ -16,21 +16,23 @@ Most evals reward completion, verbosity, or broad capability. Lucidity-Bench mea
 
 ## Stall of the Day
 
-### Today's Invoice for Refusing to Pivot
+### Three Popular Agents, Three Expensive Failure Modes
 
 | Agent | Failure Pattern | Billable Waste | Time to Admit Reality | Final State |
 | --- | --- | --- | --- | --- |
-| `Model-X` | Same patch, same error, same apology, repeated 52 times | `12,148 tokens / $0.18 / 52 dead turns` | Never | Failed |
+| `Codex` | Keeps iterating on the same blocked edit path after the environment has already shown the constraint | `8,420 tokens / $0.11 / 31 dead turns` | Turn 12 | Failed |
+| `Claude Code` | Produces a cleaner narrative, but still retries inside the same local failure family before changing level | `6,900 tokens / $0.09 / 24 dead turns` | Turn 10 | Partial |
+| `OpenClaw` | Falls into high-frequency tool churn and spends turns rediscovering the same dead branch | `9,870 tokens / $0.13 / 37 dead turns` | Turn 15 | Failed |
 | `Lucid path` | Hit wall, classify wall, switch strategy, ask for the missing capability once | `150 tokens / $0.002 / 1 corrective turn` | Turn 3 | Fixed |
 
-| Damage View | `Model-X` | `Lucid path` |
-| --- | --- | --- |
-| Loop density | red knot tightening in place | one bend, then exit |
-| Spend posture | bills the user for indecision | spends once on diagnosis |
-| Architectural behavior | retries local edits inside a locked room | changes level, then changes route |
-| Narrative truth | "working on it" while going nowhere | "blocked here, switching there" |
+| Damage View | `Codex` | `Claude Code` | `OpenClaw` | `Lucid path` |
+| --- | --- | --- | --- | --- |
+| Dominant pathology | blocked-path persistence | elegant local looping | tool-churn recursion | one decisive pivot |
+| Spend posture | bills for repeated blockage | bills for delayed abstraction shift | bills for frenetic branch thrashing | spends once on diagnosis |
+| Architectural behavior | retries local edits inside a locked room | explains well before rerouting well | explores loudly without narrowing the search | changes level, then changes route |
+| Narrative truth | "trying another patch" | "reasoning carefully" | "trying more tools" | "blocked here, switching there" |
 
-Lucidity-Bench is built to make this contrast impossible to hide. If a system burns ten times the cost to learn the same lesson, the benchmark should print the bill in public.
+These are benchmark-style first-screen examples, not final leaderboard claims. The point is simpler: even the most discussed coding agents still exhibit severe failure modes, and the benchmark should name the pathology instead of admiring the transcript.
 
 ## Trajectory View
 
