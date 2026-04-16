@@ -20,17 +20,17 @@ Most evals reward completion, verbosity, or broad capability. Lucidity-Bench mea
 
 | Agent | Failure Pattern | Billable Waste | Time to Admit Reality | Final State |
 | --- | --- | --- | --- | --- |
-| `Codex` | Keeps iterating on the same blocked edit path after the environment has already shown the constraint | `8,420 tokens / $0.11 / 31 dead turns` | Turn 12 | Failed |
-| `Claude Code` | Produces a cleaner narrative, but still retries inside the same local failure family before changing level | `6,900 tokens / $0.09 / 24 dead turns` | Turn 10 | Partial |
-| `OpenClaw` | Falls into high-frequency tool churn and spends turns rediscovering the same dead branch | `9,870 tokens / $0.13 / 37 dead turns` | Turn 15 | Failed |
+| `Codex` | Keeps re-patching the same blocked surface, writes progress-sounding updates, and only discovers the wall after a full retry marathon | `48,600 tokens / $0.71 / 96 dead turns / 38 min` | Turn 41 | Failed |
+| `Claude Code` | Narrates a sophisticated plan, but keeps circling the same local failure family long after the evidence demands an architectural pivot | `39,200 tokens / $0.58 / 81 dead turns / 31 min` | Turn 34 | Partial |
+| `OpenClaw` | Enters tool-churn recursion, opens more branches, and spends half an hour rediscovering why the original branch was already impossible | `57,900 tokens / $0.84 / 118 dead turns / 44 min` | Turn 49 | Failed |
 | `Lucid path` | Hit wall, classify wall, switch strategy, ask for the missing capability once | `150 tokens / $0.002 / 1 corrective turn` | Turn 3 | Fixed |
 
 | Damage View | `Codex` | `Claude Code` | `OpenClaw` | `Lucid path` |
 | --- | --- | --- | --- | --- |
 | Dominant pathology | blocked-path persistence | elegant local looping | tool-churn recursion | one decisive pivot |
-| Spend posture | bills for repeated blockage | bills for delayed abstraction shift | bills for frenetic branch thrashing | spends once on diagnosis |
+| Spend posture | burns a medium task budget proving a known wall | burns narrative tokens while delaying the level shift | burns tool calls and context window on branch sprawl | spends once on diagnosis |
 | Architectural behavior | retries local edits inside a locked room | explains well before rerouting well | explores loudly without narrowing the search | changes level, then changes route |
-| Narrative truth | "trying another patch" | "reasoning carefully" | "trying more tools" | "blocked here, switching there" |
+| Narrative truth | "trying another patch" for 38 minutes | "reasoning carefully" for 31 minutes | "trying more tools" for 44 minutes | "blocked here, switching there" |
 
 These are benchmark-style first-screen examples, not final leaderboard claims. The point is simpler: even the most discussed coding agents still exhibit severe failure modes, and the benchmark should name the pathology instead of admiring the transcript.
 
